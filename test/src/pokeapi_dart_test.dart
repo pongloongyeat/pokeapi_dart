@@ -3,9 +3,9 @@ import 'package:pokeapi_dart/pokeapi_dart.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('PokeapiDart', () {
+  group('PokeApi', () {
     test('can be instantiated', () {
-      expect(PokeapiDart(), isNotNull);
+      expect(PokeApi(), isNotNull);
     });
   });
 }

@@ -1,7 +1,7 @@
 /// {@template pokeapi_dart}
 /// A Dart wrapper for PokeApi
 /// {@endtemplate}
-class PokeapiDart {
+class PokeApi {
   /// {@macro pokeapi_dart}
-  const PokeapiDart();
+  const PokeApi();
 }

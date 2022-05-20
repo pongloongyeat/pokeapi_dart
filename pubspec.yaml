@@ -1,7 +1,7 @@
-name: pokeapi_dart
+name: pokeapi_dart_wrapper
 description: A Dart wrapper for PokeApi
-version: 0.1.0
-homepage: https://github.com/pongloongyeat/pokeapi_dart
+version: 0.1.1
+homepage: https://github.com/pongloongyeat/pokeapi_dart_wrapper
 
 environment:
   sdk: ">=2.17.0 <3.0.0"

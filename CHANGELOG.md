@@ -1,4 +1,10 @@
-# [0.1.0](https://github.com/pongloongyeat/pokeapi_dart/compare/e1807e5b01f39cbff7faacaa05f597f99c243405...v0.1.0) (21-05-2022)
+# [0.1.1](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.0...v0.1.1) (21-05-2022)
+
+### Features
+
+- Changed package name to `pokeapi_dart_wrapper`.
+
+# [0.1.0](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/e1807e5b01f39cbff7faacaa05f597f99c243405...v0.1.0) (21-05-2022)
 
 ### Features
 

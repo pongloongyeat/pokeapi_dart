@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pokeapi_dart/pokeapi_dart.dart';
+import 'package:pokeapi_dart_wrapper/pokeapi_dart_wrapper.dart';
 
 part 'pokeapi_flavor_text.freezed.dart';
 part 'pokeapi_flavor_text.g.dart';

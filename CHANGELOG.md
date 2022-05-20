@@ -1,4 +1,4 @@
-# [0.1.0]() (21-05-2022)
+# [0.1.0](https://github.com/pongloongyeat/pokeapi_dart/compare/e1807e5b01f39cbff7faacaa05f597f99c243405...v0.1.0) (21-05-2022)
 
 ### Features
 

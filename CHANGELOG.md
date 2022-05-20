@@ -1,0 +1,5 @@
+# [1.0.0]() (21-05-2022)
+
+### Features
+
+- Initial release

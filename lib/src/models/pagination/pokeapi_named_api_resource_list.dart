@@ -10,7 +10,7 @@ class PokeApiNamedApiResourceList with _$PokeApiNamedApiResourceList {
     int? count,
     String? next,
     String? previous,
-    PokeApiNamedApiResource? results,
+    List<PokeApiNamedApiResource>? results,
   }) = _PokeApiNamedApiResourceList;
 
   factory PokeApiNamedApiResourceList.fromJson(Map<String, dynamic> json) =>

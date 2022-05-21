@@ -24,7 +24,8 @@ mixin _$PokeApiNamedApiResourceList {
   int? get count => throw _privateConstructorUsedError;
   String? get next => throw _privateConstructorUsedError;
   String? get previous => throw _privateConstructorUsedError;
-  PokeApiNamedApiResource? get results => throw _privateConstructorUsedError;
+  List<PokeApiNamedApiResource>? get results =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -42,9 +43,7 @@ abstract class $PokeApiNamedApiResourceListCopyWith<$Res> {
       {int? count,
       String? next,
       String? previous,
-      PokeApiNamedApiResource? results});
-
-  $PokeApiNamedApiResourceCopyWith<$Res>? get results;
+      List<PokeApiNamedApiResource>? results});
 }
 
 /// @nodoc
@@ -79,19 +78,8 @@ class _$PokeApiNamedApiResourceListCopyWithImpl<$Res>
       results: results == freezed
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as PokeApiNamedApiResource?,
+              as List<PokeApiNamedApiResource>?,
     ));
-  }
-
-  @override
-  $PokeApiNamedApiResourceCopyWith<$Res>? get results {
-    if (_value.results == null) {
-      return null;
-    }
-
-    return $PokeApiNamedApiResourceCopyWith<$Res>(_value.results!, (value) {
-      return _then(_value.copyWith(results: value));
-    });
   }
 }
 
@@ -107,10 +95,7 @@ abstract class _$$_PokeApiNamedApiResourceListCopyWith<$Res>
       {int? count,
       String? next,
       String? previous,
-      PokeApiNamedApiResource? results});
-
-  @override
-  $PokeApiNamedApiResourceCopyWith<$Res>? get results;
+      List<PokeApiNamedApiResource>? results});
 }
 
 /// @nodoc
@@ -147,9 +132,9 @@ class __$$_PokeApiNamedApiResourceListCopyWithImpl<$Res>
           : previous // ignore: cast_nullable_to_non_nullable
               as String?,
       results: results == freezed
-          ? _value.results
+          ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
-              as PokeApiNamedApiResource?,
+              as List<PokeApiNamedApiResource>?,
     ));
   }
 }
@@ -158,7 +143,11 @@ class __$$_PokeApiNamedApiResourceListCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_PokeApiNamedApiResourceList implements _PokeApiNamedApiResourceList {
   _$_PokeApiNamedApiResourceList(
-      {this.count, this.next, this.previous, this.results});
+      {this.count,
+      this.next,
+      this.previous,
+      final List<PokeApiNamedApiResource>? results})
+      : _results = results;
 
   factory _$_PokeApiNamedApiResourceList.fromJson(Map<String, dynamic> json) =>
       _$$_PokeApiNamedApiResourceListFromJson(json);
@@ -169,8 +158,14 @@ class _$_PokeApiNamedApiResourceList implements _PokeApiNamedApiResourceList {
   final String? next;
   @override
   final String? previous;
+  final List<PokeApiNamedApiResource>? _results;
   @override
-  final PokeApiNamedApiResource? results;
+  List<PokeApiNamedApiResource>? get results {
+    final value = _results;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -185,7 +180,7 @@ class _$_PokeApiNamedApiResourceList implements _PokeApiNamedApiResourceList {
             const DeepCollectionEquality().equals(other.count, count) &&
             const DeepCollectionEquality().equals(other.next, next) &&
             const DeepCollectionEquality().equals(other.previous, previous) &&
-            const DeepCollectionEquality().equals(other.results, results));
+            const DeepCollectionEquality().equals(other._results, _results));
   }
 
   @JsonKey(ignore: true)
@@ -195,7 +190,7 @@ class _$_PokeApiNamedApiResourceList implements _PokeApiNamedApiResourceList {
       const DeepCollectionEquality().hash(count),
       const DeepCollectionEquality().hash(next),
       const DeepCollectionEquality().hash(previous),
-      const DeepCollectionEquality().hash(results));
+      const DeepCollectionEquality().hash(_results));
 
   @JsonKey(ignore: true)
   @override
@@ -212,10 +207,11 @@ class _$_PokeApiNamedApiResourceList implements _PokeApiNamedApiResourceList {
 abstract class _PokeApiNamedApiResourceList
     implements PokeApiNamedApiResourceList {
   factory _PokeApiNamedApiResourceList(
-      {final int? count,
-      final String? next,
-      final String? previous,
-      final PokeApiNamedApiResource? results}) = _$_PokeApiNamedApiResourceList;
+          {final int? count,
+          final String? next,
+          final String? previous,
+          final List<PokeApiNamedApiResource>? results}) =
+      _$_PokeApiNamedApiResourceList;
 
   factory _PokeApiNamedApiResourceList.fromJson(Map<String, dynamic> json) =
       _$_PokeApiNamedApiResourceList.fromJson;
@@ -227,7 +223,8 @@ abstract class _PokeApiNamedApiResourceList
   @override
   String? get previous => throw _privateConstructorUsedError;
   @override
-  PokeApiNamedApiResource? get results => throw _privateConstructorUsedError;
+  List<PokeApiNamedApiResource>? get results =>
+      throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PokeApiNamedApiResourceListCopyWith<_$_PokeApiNamedApiResourceList>

@@ -14,10 +14,10 @@ _$_PokeApiNamedApiResourceList _$$_PokeApiNamedApiResourceListFromJson(
       count: json['count'] as int?,
       next: json['next'] as String?,
       previous: json['previous'] as String?,
-      results: json['results'] == null
-          ? null
-          : PokeApiNamedApiResource.fromJson(
-              json['results'] as Map<String, dynamic>),
+      results: (json['results'] as List<dynamic>?)
+          ?.map((e) =>
+              PokeApiNamedApiResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$$_PokeApiNamedApiResourceListToJson(
@@ -26,5 +26,5 @@ Map<String, dynamic> _$$_PokeApiNamedApiResourceListToJson(
       'count': instance.count,
       'next': instance.next,
       'previous': instance.previous,
-      'results': instance.results?.toJson(),
+      'results': instance.results?.map((e) => e.toJson()).toList(),
     };

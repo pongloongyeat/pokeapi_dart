@@ -25,6 +25,15 @@ class _MappingManager {
     PokeApiSuperContestEffect: _Mapper<PokeApiSuperContestEffect>(
       fromJson: PokeApiSuperContestEffect.fromJson,
     ),
+    PokeApiEncounterMethod: _Mapper<PokeApiEncounterMethod>(
+      fromJson: PokeApiEncounterMethod.fromJson,
+    ),
+    PokeApiEncounterCondition: _Mapper<PokeApiEncounterCondition>(
+      fromJson: PokeApiEncounterCondition.fromJson,
+    ),
+    PokeApiEncounterConditionValue: _Mapper<PokeApiEncounterConditionValue>(
+      fromJson: PokeApiEncounterConditionValue.fromJson,
+    ),
   };
 
   T? mapToObject<T>(Map<String, dynamic> json) {

@@ -1,4 +1,9 @@
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
+import 'package:pokeapi_dart_wrapper/pokeapi_dart_wrapper.dart';
+
+part 'mapping_manager.dart';
 
 /// The PokeApi client.
 ///
@@ -31,7 +36,21 @@ class PokeApi {
 
   PokeApi._(this._dio);
 
-  /// The Dio client. This is responsible for making
-  /// API calls to PokéAPI.
   final Dio _dio;
+  static final _MappingManager _mappingManager = _MappingManager();
+
+  Future<T?> get<T>(String url) async {
+    try {
+      final response = await _dio.getUri<String>(Uri.parse(url));
+
+      if (response.statusCode == 200 && response.data != null) {
+        final json = jsonDecode(response.data!) as Map<String, dynamic>;
+        return _mappingManager.mapToObject<T>(json);
+      }
+    } catch (e) {
+      return null;
+    }
+
+    return null;
+  }
 }

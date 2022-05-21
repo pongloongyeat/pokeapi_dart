@@ -4,6 +4,9 @@ part of 'client.dart';
 /// for its fromJson factory).
 class _MappingManager {
   final _mapping = <Type, _Mapper>{
+    PokeApiNamedApiResourceList: _Mapper<PokeApiNamedApiResourceList>(
+      fromJson: PokeApiNamedApiResourceList.fromJson,
+    ),
     PokeApiBerry: _Mapper<PokeApiBerry>(fromJson: PokeApiBerry.fromJson),
     PokeApiBerryFirmness:
         _Mapper<PokeApiBerryFirmness>(fromJson: PokeApiBerryFirmness.fromJson),

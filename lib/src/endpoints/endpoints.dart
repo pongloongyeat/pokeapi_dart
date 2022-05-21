@@ -8,15 +8,21 @@ part 'base_endpoint.dart';
 abstract class BasePokeApiEndpoints {
   BasePokeApiEndpoints({
     required this.berry,
+    required this.berryFirmness,
+    required this.berryFlavor,
   });
 
   final Endpoint<PokeApiBerry> berry;
+  final Endpoint<PokeApiBerryFirmness> berryFirmness;
+  final Endpoint<PokeApiBerryFlavor> berryFlavor;
 }
 
 class PokeApiEndpoints extends BasePokeApiEndpoints {
   PokeApiEndpoints(this.client)
       : super(
-          berry: Endpoint(client),
+          berry: Endpoint<PokeApiBerry>(client),
+          berryFirmness: Endpoint<PokeApiBerryFirmness>(client),
+          berryFlavor: Endpoint<PokeApiBerryFlavor>(client),
         );
 
   final PokeApiClient client;

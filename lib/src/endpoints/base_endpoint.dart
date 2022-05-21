@@ -11,8 +11,8 @@ class Endpoint<T> extends BaseEndpointGetter<T> implements BaseEndpoint<T> {
   }
 
   @override
-  Future<T?> getByQuery(String name) {
-    return _client.get('${ApiDefaults.baseUrl}/$endpoint/$name');
+  Future<T?> getByQuery(String query) {
+    return _client.get('${ApiDefaults.baseUrl}/$endpoint/$query');
   }
 
   @override

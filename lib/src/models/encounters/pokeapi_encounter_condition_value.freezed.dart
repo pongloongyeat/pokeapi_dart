@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'pokeapi_condition_value.dart';
+part of 'pokeapi_encounter_condition_value.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,13 +14,13 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-PokeapiConditionValue _$PokeapiConditionValueFromJson(
+PokeApiEncounterConditionValue _$PokeApiEncounterConditionValueFromJson(
     Map<String, dynamic> json) {
-  return _PokeapiConditionValue.fromJson(json);
+  return _PokeApiEncounterConditionValue.fromJson(json);
 }
 
 /// @nodoc
-mixin _$PokeapiConditionValue {
+mixin _$PokeApiEncounterConditionValue {
   int? get id => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
   PokeApiNamedApiResource? get condition => throw _privateConstructorUsedError;
@@ -28,15 +28,16 @@ mixin _$PokeapiConditionValue {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PokeapiConditionValueCopyWith<PokeapiConditionValue> get copyWith =>
-      throw _privateConstructorUsedError;
+  $PokeApiEncounterConditionValueCopyWith<PokeApiEncounterConditionValue>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PokeapiConditionValueCopyWith<$Res> {
-  factory $PokeapiConditionValueCopyWith(PokeapiConditionValue value,
-          $Res Function(PokeapiConditionValue) then) =
-      _$PokeapiConditionValueCopyWithImpl<$Res>;
+abstract class $PokeApiEncounterConditionValueCopyWith<$Res> {
+  factory $PokeApiEncounterConditionValueCopyWith(
+          PokeApiEncounterConditionValue value,
+          $Res Function(PokeApiEncounterConditionValue) then) =
+      _$PokeApiEncounterConditionValueCopyWithImpl<$Res>;
   $Res call(
       {int? id,
       String? name,
@@ -47,13 +48,13 @@ abstract class $PokeapiConditionValueCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokeapiConditionValueCopyWithImpl<$Res>
-    implements $PokeapiConditionValueCopyWith<$Res> {
-  _$PokeapiConditionValueCopyWithImpl(this._value, this._then);
+class _$PokeApiEncounterConditionValueCopyWithImpl<$Res>
+    implements $PokeApiEncounterConditionValueCopyWith<$Res> {
+  _$PokeApiEncounterConditionValueCopyWithImpl(this._value, this._then);
 
-  final PokeapiConditionValue _value;
+  final PokeApiEncounterConditionValue _value;
   // ignore: unused_field
-  final $Res Function(PokeapiConditionValue) _then;
+  final $Res Function(PokeApiEncounterConditionValue) _then;
 
   @override
   $Res call({
@@ -95,11 +96,12 @@ class _$PokeapiConditionValueCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_PokeapiConditionValueCopyWith<$Res>
-    implements $PokeapiConditionValueCopyWith<$Res> {
-  factory _$$_PokeapiConditionValueCopyWith(_$_PokeapiConditionValue value,
-          $Res Function(_$_PokeapiConditionValue) then) =
-      __$$_PokeapiConditionValueCopyWithImpl<$Res>;
+abstract class _$$_PokeApiEncounterConditionValueCopyWith<$Res>
+    implements $PokeApiEncounterConditionValueCopyWith<$Res> {
+  factory _$$_PokeApiEncounterConditionValueCopyWith(
+          _$_PokeApiEncounterConditionValue value,
+          $Res Function(_$_PokeApiEncounterConditionValue) then) =
+      __$$_PokeApiEncounterConditionValueCopyWithImpl<$Res>;
   @override
   $Res call(
       {int? id,
@@ -112,16 +114,17 @@ abstract class _$$_PokeapiConditionValueCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PokeapiConditionValueCopyWithImpl<$Res>
-    extends _$PokeapiConditionValueCopyWithImpl<$Res>
-    implements _$$_PokeapiConditionValueCopyWith<$Res> {
-  __$$_PokeapiConditionValueCopyWithImpl(_$_PokeapiConditionValue _value,
-      $Res Function(_$_PokeapiConditionValue) _then)
-      : super(_value, (v) => _then(v as _$_PokeapiConditionValue));
+class __$$_PokeApiEncounterConditionValueCopyWithImpl<$Res>
+    extends _$PokeApiEncounterConditionValueCopyWithImpl<$Res>
+    implements _$$_PokeApiEncounterConditionValueCopyWith<$Res> {
+  __$$_PokeApiEncounterConditionValueCopyWithImpl(
+      _$_PokeApiEncounterConditionValue _value,
+      $Res Function(_$_PokeApiEncounterConditionValue) _then)
+      : super(_value, (v) => _then(v as _$_PokeApiEncounterConditionValue));
 
   @override
-  _$_PokeapiConditionValue get _value =>
-      super._value as _$_PokeapiConditionValue;
+  _$_PokeApiEncounterConditionValue get _value =>
+      super._value as _$_PokeApiEncounterConditionValue;
 
   @override
   $Res call({
@@ -130,7 +133,7 @@ class __$$_PokeapiConditionValueCopyWithImpl<$Res>
     Object? condition = freezed,
     Object? names = freezed,
   }) {
-    return _then(_$_PokeapiConditionValue(
+    return _then(_$_PokeApiEncounterConditionValue(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -153,13 +156,15 @@ class __$$_PokeapiConditionValueCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PokeapiConditionValue implements _PokeapiConditionValue {
-  _$_PokeapiConditionValue(
+class _$_PokeApiEncounterConditionValue
+    implements _PokeApiEncounterConditionValue {
+  _$_PokeApiEncounterConditionValue(
       {this.id, this.name, this.condition, final List<PokeApiName>? names})
       : _names = names;
 
-  factory _$_PokeapiConditionValue.fromJson(Map<String, dynamic> json) =>
-      _$$_PokeapiConditionValueFromJson(json);
+  factory _$_PokeApiEncounterConditionValue.fromJson(
+          Map<String, dynamic> json) =>
+      _$$_PokeApiEncounterConditionValueFromJson(json);
 
   @override
   final int? id;
@@ -178,14 +183,14 @@ class _$_PokeapiConditionValue implements _PokeapiConditionValue {
 
   @override
   String toString() {
-    return 'PokeapiConditionValue(id: $id, name: $name, condition: $condition, names: $names)';
+    return 'PokeApiEncounterConditionValue(id: $id, name: $name, condition: $condition, names: $names)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PokeapiConditionValue &&
+            other is _$_PokeApiEncounterConditionValue &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.condition, condition) &&
@@ -203,25 +208,26 @@ class _$_PokeapiConditionValue implements _PokeapiConditionValue {
 
   @JsonKey(ignore: true)
   @override
-  _$$_PokeapiConditionValueCopyWith<_$_PokeapiConditionValue> get copyWith =>
-      __$$_PokeapiConditionValueCopyWithImpl<_$_PokeapiConditionValue>(
-          this, _$identity);
+  _$$_PokeApiEncounterConditionValueCopyWith<_$_PokeApiEncounterConditionValue>
+      get copyWith => __$$_PokeApiEncounterConditionValueCopyWithImpl<
+          _$_PokeApiEncounterConditionValue>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PokeapiConditionValueToJson(this);
+    return _$$_PokeApiEncounterConditionValueToJson(this);
   }
 }
 
-abstract class _PokeapiConditionValue implements PokeapiConditionValue {
-  factory _PokeapiConditionValue(
+abstract class _PokeApiEncounterConditionValue
+    implements PokeApiEncounterConditionValue {
+  factory _PokeApiEncounterConditionValue(
       {final int? id,
       final String? name,
       final PokeApiNamedApiResource? condition,
-      final List<PokeApiName>? names}) = _$_PokeapiConditionValue;
+      final List<PokeApiName>? names}) = _$_PokeApiEncounterConditionValue;
 
-  factory _PokeapiConditionValue.fromJson(Map<String, dynamic> json) =
-      _$_PokeapiConditionValue.fromJson;
+  factory _PokeApiEncounterConditionValue.fromJson(Map<String, dynamic> json) =
+      _$_PokeApiEncounterConditionValue.fromJson;
 
   @override
   int? get id => throw _privateConstructorUsedError;
@@ -233,6 +239,6 @@ abstract class _PokeapiConditionValue implements PokeapiConditionValue {
   List<PokeApiName>? get names => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_PokeapiConditionValueCopyWith<_$_PokeapiConditionValue> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_PokeApiEncounterConditionValueCopyWith<_$_PokeApiEncounterConditionValue>
+      get copyWith => throw _privateConstructorUsedError;
 }

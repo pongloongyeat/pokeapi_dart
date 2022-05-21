@@ -8,9 +8,9 @@ part of 'pokeapi_encounter_condition.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PokeapiEncounterCondition _$$_PokeapiEncounterConditionFromJson(
+_$_PokeApiEncounterCondition _$$_PokeApiEncounterConditionFromJson(
         Map<String, dynamic> json) =>
-    _$_PokeapiEncounterCondition(
+    _$_PokeApiEncounterCondition(
       id: json['id'] as int?,
       name: json['name'] as String?,
       names: (json['names'] as List<dynamic>?)
@@ -22,8 +22,8 @@ _$_PokeapiEncounterCondition _$$_PokeapiEncounterConditionFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PokeapiEncounterConditionToJson(
-        _$_PokeapiEncounterCondition instance) =>
+Map<String, dynamic> _$$_PokeApiEncounterConditionToJson(
+        _$_PokeApiEncounterCondition instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

@@ -5,14 +5,14 @@ part 'pokeapi_encounter_condition.freezed.dart';
 part 'pokeapi_encounter_condition.g.dart';
 
 @freezed
-class PokeapiEncounterCondition with _$PokeapiEncounterCondition {
-  factory PokeapiEncounterCondition({
+class PokeApiEncounterCondition with _$PokeApiEncounterCondition {
+  factory PokeApiEncounterCondition({
     int? id,
     String? name,
     List<PokeApiName>? names,
     List<PokeApiNamedApiResource>? values,
-  }) = _PokeapiEncounterCondition;
+  }) = _PokeApiEncounterCondition;
 
-  factory PokeapiEncounterCondition.fromJson(Map<String, dynamic> json) =>
-      _$PokeapiEncounterConditionFromJson(json);
+  factory PokeApiEncounterCondition.fromJson(Map<String, dynamic> json) =>
+      _$PokeApiEncounterConditionFromJson(json);
 }

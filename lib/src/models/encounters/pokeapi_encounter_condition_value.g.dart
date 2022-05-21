@@ -2,15 +2,15 @@
 
 // ignore_for_file: implicit_dynamic_parameter, lines_longer_than_80_chars, non_constant_identifier_names, require_trailing_commas
 
-part of 'pokeapi_condition_value.dart';
+part of 'pokeapi_encounter_condition_value.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PokeapiConditionValue _$$_PokeapiConditionValueFromJson(
+_$_PokeApiEncounterConditionValue _$$_PokeApiEncounterConditionValueFromJson(
         Map<String, dynamic> json) =>
-    _$_PokeapiConditionValue(
+    _$_PokeApiEncounterConditionValue(
       id: json['id'] as int?,
       name: json['name'] as String?,
       condition: json['condition'] == null
@@ -22,8 +22,8 @@ _$_PokeapiConditionValue _$$_PokeapiConditionValueFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PokeapiConditionValueToJson(
-        _$_PokeapiConditionValue instance) =>
+Map<String, dynamic> _$$_PokeApiEncounterConditionValueToJson(
+        _$_PokeApiEncounterConditionValue instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

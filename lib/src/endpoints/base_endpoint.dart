@@ -20,7 +20,8 @@ class Endpoint<T> extends BaseEndpointGetter<T> implements BaseEndpoint<T> {
     int limit = ApiDefaults.defaultLimit,
     int offset = ApiDefaults.defaultSkip,
   }) {
-    return _client.get('${ApiDefaults.baseUrl}/$endpoint');
+    return _client
+        .get('${ApiDefaults.baseUrl}/$endpoint?limit=$limit&offset=$offset');
   }
 }
 

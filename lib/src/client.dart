@@ -5,40 +5,40 @@ import 'package:pokeapi_dart_wrapper/pokeapi_dart_wrapper.dart';
 
 part 'mapping_manager.dart';
 
-/// The PokeApi client.
-///
-/// TODO: Add some example usages
-class PokeApi {
-  /// Returns a PokeApi class with the default
+/// The PokeApiClient class.
+class PokeApiClient {
+  /// Returns a PokeApiClient class with the default
   /// Dio client.
-  factory PokeApi() {
-    return PokeApi._(Dio());
+  factory PokeApiClient() {
+    return PokeApiClient._(Dio());
   }
 
-  /// Returns a PokeApi class with interceptors
+  /// Returns a PokeApiClient class with interceptors
   /// added to the Dio client.
-  factory PokeApi.withInterceptors(List<Interceptor> interceptors) {
+  factory PokeApiClient.withInterceptors(List<Interceptor> interceptors) {
     final dio = Dio()..interceptors.addAll(interceptors);
-    return PokeApi._(dio);
+    return PokeApiClient._(dio);
   }
 
-  /// Returns a PokeApi class with a single interceptor
+  /// Returns a PokeApiClient class with a single interceptor
   /// added to the Dio client.
-  factory PokeApi.withInterceptor(Interceptor interceptor) {
-    return PokeApi.withInterceptors([interceptor]);
+  factory PokeApiClient.withInterceptor(Interceptor interceptor) {
+    return PokeApiClient.withInterceptors([interceptor]);
   }
 
-  /// Returns a PokeApi class with a specified Dio
+  /// Returns a PokeApiClient class with a specified Dio
   /// client.
-  factory PokeApi.withDio(Dio dio) {
-    return PokeApi._(dio);
+  factory PokeApiClient.withDio(Dio dio) {
+    return PokeApiClient._(dio);
   }
 
-  PokeApi._(this._dio);
+  PokeApiClient._(this._dio);
 
   final Dio _dio;
   static final _MappingManager _mappingManager = _MappingManager();
 
+  /// Sends a GET request to the specified URL
+  /// and maps the returned JSON to type T.
   Future<T?> get<T>(String url) async {
     try {
       final response = await _dio.getUri<String>(Uri.parse(url));

@@ -11,6 +11,6 @@ class PokeApiEffect with _$PokeApiEffect {
     PokeApiNamedApiResource? language,
   }) = _PokeApiEffect;
 
-  factory PokeApiEffect.fromJson(Map<String, Object?> json) =>
+  factory PokeApiEffect.fromJson(Map<String, dynamic> json) =>
       _$PokeApiEffectFromJson(json);
 }

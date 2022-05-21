@@ -11,6 +11,6 @@ class PokeApiMachineVersionDetail with _$PokeApiMachineVersionDetail {
     PokeApiNamedApiResource? versionGroup,
   }) = _PokeApiMachineVersionDetail;
 
-  factory PokeApiMachineVersionDetail.fromJson(Map<String, Object?> json) =>
+  factory PokeApiMachineVersionDetail.fromJson(Map<String, dynamic> json) =>
       _$PokeApiMachineVersionDetailFromJson(json);
 }

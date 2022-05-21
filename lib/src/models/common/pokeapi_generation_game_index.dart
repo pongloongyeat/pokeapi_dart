@@ -11,6 +11,6 @@ class PokeApiGenerationGameIndex with _$PokeApiGenerationGameIndex {
     PokeApiNamedApiResource? generation,
   }) = _PokeApiGenerationGameIndex;
 
-  factory PokeApiGenerationGameIndex.fromJson(Map<String, Object?> json) =>
+  factory PokeApiGenerationGameIndex.fromJson(Map<String, dynamic> json) =>
       _$PokeApiGenerationGameIndexFromJson(json);
 }

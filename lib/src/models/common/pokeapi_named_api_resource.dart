@@ -10,6 +10,6 @@ class PokeApiNamedApiResource with _$PokeApiNamedApiResource {
     String? url,
   }) = _PokeApiNamedApiResource;
 
-  factory PokeApiNamedApiResource.fromJson(Map<String, Object?> json) =>
+  factory PokeApiNamedApiResource.fromJson(Map<String, dynamic> json) =>
       _$PokeApiNamedApiResourceFromJson(json);
 }

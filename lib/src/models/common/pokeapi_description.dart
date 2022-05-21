@@ -11,6 +11,6 @@ class PokeApiDescription with _$PokeApiDescription {
     PokeApiNamedApiResource? language,
   }) = _PokeApiDescription;
 
-  factory PokeApiDescription.fromJson(Map<String, Object?> json) =>
+  factory PokeApiDescription.fromJson(Map<String, dynamic> json) =>
       _$PokeApiDescriptionFromJson(json);
 }

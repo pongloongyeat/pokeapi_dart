@@ -12,6 +12,6 @@ class PokeApiFlavorText with _$PokeApiFlavorText {
     PokeApiNamedApiResource? version,
   }) = _PokeApiFlavorText;
 
-  factory PokeApiFlavorText.fromJson(Map<String, Object?> json) =>
+  factory PokeApiFlavorText.fromJson(Map<String, dynamic> json) =>
       _$PokeApiFlavorTextFromJson(json);
 }

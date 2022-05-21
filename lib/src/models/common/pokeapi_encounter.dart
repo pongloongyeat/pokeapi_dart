@@ -14,6 +14,6 @@ class PokeApiEncounter with _$PokeApiEncounter {
     PokeApiNamedApiResource? method,
   }) = _PokeApiEncounter;
 
-  factory PokeApiEncounter.fromJson(Map<String, Object?> json) =>
+  factory PokeApiEncounter.fromJson(Map<String, dynamic> json) =>
       _$PokeApiEncounterFromJson(json);
 }

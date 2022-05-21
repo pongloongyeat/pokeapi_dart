@@ -1,3 +1,12 @@
+# [0.1.3](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.2...v0.1.3) (22-05-2022)
+
+### Feature
+
+- Added PokeApiContestType model
+- Added PokeApiContestEffect model
+- Added PokeApiSuperContestEffect model
+- Added Contest Type endpoint, Contest Effect endpoint and Super Contest Effect endpoint and tests for added endpoints
+
 # [0.1.2](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.1...v0.1.2) (21-05-2022)
 
 ### Features

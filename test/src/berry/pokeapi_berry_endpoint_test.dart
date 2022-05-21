@@ -44,5 +44,9 @@ void main() async {
         PokeApiBerry.fromJson(resultByQueryJson!),
       );
     });
+
+    test('paginated result is not empty', () {
+      expect(resultByPagination?.results?.isNotEmpty, true);
+    });
   });
 }

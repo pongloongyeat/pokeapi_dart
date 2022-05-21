@@ -12,7 +12,7 @@ void main() async {
   final resultByPagination = await client.berry.getPaginated();
   final resultByPaginationJson = resultByPagination?.toJson();
 
-  group('PokeApiBerryEndpoint', () {
+  group('PokeApiBerryEndpoint:', () {
     test('successfully fetches data', () {
       expect(resultById, isNotNull);
       expect(resultByQuery, isNotNull);
@@ -34,7 +34,7 @@ void main() async {
       );
     });
 
-    test('fetched class are same for by ID and by query', () {
+    test('fetched classes are the same by ID and by query', () {
       expect(resultById, resultByQuery);
     });
 

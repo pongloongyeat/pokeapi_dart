@@ -14,7 +14,7 @@ void main() async {
   final resultByPagination = await client.berryFirmness.getPaginated();
   final resultByPaginationJson = resultByPagination?.toJson();
 
-  group('PokeApiBerryFirmnessEndpoint', () {
+  group('PokeApiBerryFirmnessEndpoint:', () {
     test('successfully fetches data', () {
       expect(resultById, isNotNull);
       expect(resultByQuery, isNotNull);
@@ -36,7 +36,7 @@ void main() async {
       );
     });
 
-    test('fetched class are same for by ID and by query', () {
+    test('fetched classes are the same by ID and by query', () {
       expect(resultById, resultByQuery);
     });
 

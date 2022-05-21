@@ -17,8 +17,8 @@ class Endpoint<T> extends BaseEndpointGetter<T> implements BaseEndpoint<T> {
 
   @override
   Future<PokeApiNamedApiResourceList?> getPaginated({
-    required int limit,
-    required int offset,
+    int limit = ApiDefaults.defaultLimit,
+    int offset = ApiDefaults.defaultSkip,
   }) {
     return _client.get('${ApiDefaults.baseUrl}/$endpoint');
   }
@@ -28,8 +28,8 @@ abstract class BaseEndpoint<T> {
   Future<T?> getById(int id);
   Future<T?> getByQuery(String name);
   Future<PokeApiNamedApiResourceList?> getPaginated({
-    required int limit,
-    required int offset,
+    int limit = ApiDefaults.defaultLimit,
+    int offset = ApiDefaults.defaultSkip,
   });
 }
 

@@ -10,11 +10,17 @@ abstract class BasePokeApiEndpoints {
     required this.berry,
     required this.berryFirmness,
     required this.berryFlavor,
+    required this.contestType,
+    required this.contestEffect,
+    required this.superContestEffect,
   });
 
   final Endpoint<PokeApiBerry> berry;
   final Endpoint<PokeApiBerryFirmness> berryFirmness;
   final Endpoint<PokeApiBerryFlavor> berryFlavor;
+  final Endpoint<PokeApiContestType> contestType;
+  final Endpoint<PokeApiContestEffect> contestEffect;
+  final Endpoint<PokeApiSuperContestEffect> superContestEffect;
 }
 
 class PokeApiEndpoints extends BasePokeApiEndpoints {
@@ -23,6 +29,9 @@ class PokeApiEndpoints extends BasePokeApiEndpoints {
           berry: Endpoint<PokeApiBerry>(_client),
           berryFirmness: Endpoint<PokeApiBerryFirmness>(_client),
           berryFlavor: Endpoint<PokeApiBerryFlavor>(_client),
+          contestType: Endpoint<PokeApiContestType>(_client),
+          contestEffect: Endpoint<PokeApiContestEffect>(_client),
+          superContestEffect: Endpoint<PokeApiSuperContestEffect>(_client),
         );
 
   final PokeApiClient _client;

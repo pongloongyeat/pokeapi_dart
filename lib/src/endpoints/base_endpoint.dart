@@ -16,8 +16,10 @@ class Endpoint<T> extends BaseEndpointGetter<T> implements BaseEndpoint<T> {
   }
 
   @override
-  Future<PokeApiNamedApiResourceList?> getPaginated(
-      {required int limit, required int offset}) {
+  Future<PokeApiNamedApiResourceList?> getPaginated({
+    required int limit,
+    required int offset,
+  }) {
     return _client.get('${ApiDefaults.baseUrl}/$endpoint');
   }
 }

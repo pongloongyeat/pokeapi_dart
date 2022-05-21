@@ -1,3 +1,15 @@
+# [0.1.2](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.1...v0.1.2) (21-05-2022)
+
+### Features
+
+- Added PokeApiBerryFirmness model
+- Added PokeApiBerryFlavorMap model
+- Added PokeApiBerryFlavor model
+- Added PokeApiBerry model
+- Added PokeApiFlavorBerryMap model
+- Added PokeApi client with Berry endpoint, Berry Firmness endpoint and Berry Flavor endpoint
+- Added tests for Berry endpoint, Berry Firmness endpoint and Berry Flavor endpoint
+
 # [0.1.1](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.0...v0.1.1) (21-05-2022)
 
 ### Features

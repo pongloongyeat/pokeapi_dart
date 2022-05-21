@@ -124,8 +124,7 @@ class __$$_PokeApiGenerationGameIndexCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiGenerationGameIndex implements _PokeApiGenerationGameIndex {
   const _$_PokeApiGenerationGameIndex({this.gameIndex, this.generation});
 

@@ -22,5 +22,5 @@ Map<String, dynamic> _$$_PokeApiVersionGameIndexToJson(
         _$_PokeApiVersionGameIndex instance) =>
     <String, dynamic>{
       'game_index': instance.gameIndex,
-      'version': instance.version,
+      'version': instance.version?.toJson(),
     };

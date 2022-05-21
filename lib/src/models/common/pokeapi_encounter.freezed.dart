@@ -179,8 +179,7 @@ class __$$_PokeApiEncounterCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiEncounter implements _PokeApiEncounter {
   const _$_PokeApiEncounter(
       {this.minLevel,

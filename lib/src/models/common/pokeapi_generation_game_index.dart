@@ -6,7 +6,6 @@ part 'pokeapi_generation_game_index.g.dart';
 
 @freezed
 class PokeApiGenerationGameIndex with _$PokeApiGenerationGameIndex {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory PokeApiGenerationGameIndex({
     int? gameIndex,
     PokeApiNamedApiResource? generation,

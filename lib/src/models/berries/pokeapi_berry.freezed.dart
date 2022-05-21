@@ -284,8 +284,7 @@ class __$$_PokeApiBerryCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiBerry implements _PokeApiBerry {
   _$_PokeApiBerry(
       {this.id,

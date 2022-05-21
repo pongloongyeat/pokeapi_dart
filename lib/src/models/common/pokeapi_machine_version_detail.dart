@@ -6,7 +6,6 @@ part 'pokeapi_machine_version_detail.g.dart';
 
 @freezed
 class PokeApiMachineVersionDetail with _$PokeApiMachineVersionDetail {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory PokeApiMachineVersionDetail({
     PokeApiApiResource? machine,
     PokeApiNamedApiResource? versionGroup,

@@ -6,7 +6,6 @@ part 'pokeapi_verbose_effect.g.dart';
 
 @freezed
 class PokeApiVerboseEffect with _$PokeApiVerboseEffect {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   factory PokeApiVerboseEffect({
     String? effect,
     String? shortEffect,

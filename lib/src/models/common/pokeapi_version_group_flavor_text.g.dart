@@ -26,6 +26,6 @@ Map<String, dynamic> _$$_PokeApiVersionGroupFlavorTextToJson(
         _$_PokeApiVersionGroupFlavorText instance) =>
     <String, dynamic>{
       'text': instance.text,
-      'language': instance.language,
-      'version_group': instance.versionGroup,
+      'language': instance.language?.toJson(),
+      'version_group': instance.versionGroup?.toJson(),
     };

@@ -143,8 +143,7 @@ class __$$_PokeapiVersionEncounterDetailCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeapiVersionEncounterDetail
     implements _PokeapiVersionEncounterDetail {
   _$_PokeapiVersionEncounterDetail(

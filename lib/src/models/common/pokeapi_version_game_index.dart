@@ -6,7 +6,6 @@ part 'pokeapi_version_game_index.g.dart';
 
 @freezed
 class PokeApiVersionGameIndex with _$PokeApiVersionGameIndex {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   factory PokeApiVersionGameIndex({
     int? gameIndex,
     PokeApiNamedApiResource? version,

@@ -133,8 +133,7 @@ class __$$_PokeApiVerboseEffectCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiVerboseEffect implements _PokeApiVerboseEffect {
   _$_PokeApiVerboseEffect({this.effect, this.shortEffect, this.langauge});
 

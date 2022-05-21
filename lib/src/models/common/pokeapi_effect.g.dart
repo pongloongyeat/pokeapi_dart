@@ -20,5 +20,5 @@ _$_PokeApiEffect _$$_PokeApiEffectFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$_PokeApiEffectToJson(_$_PokeApiEffect instance) =>
     <String, dynamic>{
       'description': instance.description,
-      'language': instance.language,
+      'language': instance.language?.toJson(),
     };

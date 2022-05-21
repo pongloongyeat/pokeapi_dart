@@ -143,8 +143,7 @@ class __$$_PokeApiMachineVersionDetailCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiMachineVersionDetail implements _PokeApiMachineVersionDetail {
   const _$_PokeApiMachineVersionDetail({this.machine, this.versionGroup});
 

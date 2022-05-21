@@ -6,7 +6,6 @@ part 'pokeapi_flavor_text.g.dart';
 
 @freezed
 class PokeApiFlavorText with _$PokeApiFlavorText {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory PokeApiFlavorText({
     String? flavorText,
     PokeApiNamedApiResource? language,

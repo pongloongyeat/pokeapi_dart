@@ -122,8 +122,7 @@ class __$$_PokeApiVersionGameIndexCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiVersionGameIndex implements _PokeApiVersionGameIndex {
   _$_PokeApiVersionGameIndex({this.gameIndex, this.version});
 

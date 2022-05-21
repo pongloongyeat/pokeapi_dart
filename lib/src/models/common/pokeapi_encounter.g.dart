@@ -27,7 +27,7 @@ Map<String, dynamic> _$$_PokeApiEncounterToJson(_$_PokeApiEncounter instance) =>
     <String, dynamic>{
       'min_level': instance.minLevel,
       'max_level': instance.maxLevel,
-      'condition_values': instance.conditionValues,
+      'condition_values': instance.conditionValues?.toJson(),
       'chance': instance.chance,
-      'method': instance.method,
+      'method': instance.method?.toJson(),
     };

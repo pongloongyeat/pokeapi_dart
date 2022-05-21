@@ -27,6 +27,6 @@ Map<String, dynamic> _$$_PokeApiBerryFirmnessToJson(
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'berries': instance.berries,
-      'names': instance.names,
+      'berries': instance.berries?.map((e) => e.toJson()).toList(),
+      'names': instance.names?.map((e) => e.toJson()).toList(),
     };

@@ -151,8 +151,7 @@ class __$$_PokeApiFlavorTextCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiFlavorText implements _PokeApiFlavorText {
   const _$_PokeApiFlavorText({this.flavorText, this.language, this.version});
 

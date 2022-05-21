@@ -22,5 +22,5 @@ Map<String, dynamic> _$$_PokeApiDescriptionToJson(
         _$_PokeApiDescription instance) =>
     <String, dynamic>{
       'description': instance.description,
-      'language': instance.language,
+      'language': instance.language?.toJson(),
     };

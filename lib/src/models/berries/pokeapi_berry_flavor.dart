@@ -6,7 +6,6 @@ part 'pokeapi_berry_flavor.g.dart';
 
 @freezed
 class PokeApiBerryFlavor with _$PokeApiBerryFlavor {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   factory PokeApiBerryFlavor({
     int? id,
     String? name,

@@ -46,8 +46,8 @@ Map<String, dynamic> _$$_PokeApiBerryToJson(_$_PokeApiBerry instance) =>
       'size': instance.size,
       'smoothness': instance.smoothness,
       'soil_dryness': instance.soilDryness,
-      'firmness': instance.firmness,
-      'flavors': instance.flavors,
-      'item': instance.item,
-      'natural_gift_type': instance.naturalGiftType,
+      'firmness': instance.firmness?.toJson(),
+      'flavors': instance.flavors?.map((e) => e.toJson()).toList(),
+      'item': instance.item?.toJson(),
+      'natural_gift_type': instance.naturalGiftType?.toJson(),
     };

@@ -158,8 +158,7 @@ class __$$_PokeApiVersionGroupFlavorTextCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(fieldRename: FieldRename.snake)
+@JsonSerializable()
 class _$_PokeApiVersionGroupFlavorText
     implements _PokeApiVersionGroupFlavorText {
   _$_PokeApiVersionGroupFlavorText(

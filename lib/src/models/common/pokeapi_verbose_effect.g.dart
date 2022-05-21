@@ -24,5 +24,5 @@ Map<String, dynamic> _$$_PokeApiVerboseEffectToJson(
     <String, dynamic>{
       'effect': instance.effect,
       'short_effect': instance.shortEffect,
-      'langauge': instance.langauge,
+      'langauge': instance.langauge?.toJson(),
     };

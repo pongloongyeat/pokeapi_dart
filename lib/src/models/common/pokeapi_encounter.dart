@@ -6,7 +6,6 @@ part 'pokeapi_encounter.g.dart';
 
 @freezed
 class PokeApiEncounter with _$PokeApiEncounter {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory PokeApiEncounter({
     int? minLevel,
     int? maxLevel,

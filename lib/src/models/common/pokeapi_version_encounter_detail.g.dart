@@ -24,7 +24,8 @@ _$_PokeapiVersionEncounterDetail _$$_PokeapiVersionEncounterDetailFromJson(
 Map<String, dynamic> _$$_PokeapiVersionEncounterDetailToJson(
         _$_PokeapiVersionEncounterDetail instance) =>
     <String, dynamic>{
-      'version': instance.version,
+      'version': instance.version?.toJson(),
       'max_chance': instance.maxChance,
-      'encounter_details': instance.encounterDetails,
+      'encounter_details':
+          instance.encounterDetails?.map((e) => e.toJson()).toList(),
     };

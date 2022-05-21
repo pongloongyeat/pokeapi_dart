@@ -20,5 +20,5 @@ _$_PokeApiName _$$_PokeApiNameFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$_PokeApiNameToJson(_$_PokeApiName instance) =>
     <String, dynamic>{
       'name': instance.name,
-      'language': instance.language,
+      'language': instance.language?.toJson(),
     };

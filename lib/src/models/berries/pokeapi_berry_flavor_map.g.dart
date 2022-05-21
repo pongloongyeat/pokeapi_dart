@@ -22,5 +22,5 @@ Map<String, dynamic> _$$_PokeApiBerryFlavorMapToJson(
         _$_PokeApiBerryFlavorMap instance) =>
     <String, dynamic>{
       'potency': instance.potency,
-      'flavor': instance.flavor,
+      'flavor': instance.flavor?.toJson(),
     };

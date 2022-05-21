@@ -24,6 +24,6 @@ _$_PokeApiMachineVersionDetail _$$_PokeApiMachineVersionDetailFromJson(
 Map<String, dynamic> _$$_PokeApiMachineVersionDetailToJson(
         _$_PokeApiMachineVersionDetail instance) =>
     <String, dynamic>{
-      'machine': instance.machine,
-      'version_group': instance.versionGroup,
+      'machine': instance.machine?.toJson(),
+      'version_group': instance.versionGroup?.toJson(),
     };

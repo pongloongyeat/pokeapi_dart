@@ -26,5 +26,5 @@ Map<String, dynamic> _$$_PokeApiNamedApiResourceListToJson(
       'count': instance.count,
       'next': instance.next,
       'previous': instance.previous,
-      'results': instance.results,
+      'results': instance.results?.toJson(),
     };

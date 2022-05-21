@@ -6,7 +6,6 @@ part 'pokeapi_version_group_flavor_text.g.dart';
 
 @freezed
 class PokeApiVersionGroupFlavorText with _$PokeApiVersionGroupFlavorText {
-  @JsonSerializable(fieldRename: FieldRename.snake)
   factory PokeApiVersionGroupFlavorText({
     String? text,
     PokeApiNamedApiResource? language,

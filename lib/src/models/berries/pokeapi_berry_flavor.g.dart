@@ -31,7 +31,7 @@ Map<String, dynamic> _$$_PokeApiBerryFlavorToJson(
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'berries': instance.berries,
-      'contest_type': instance.contestType,
-      'names': instance.names,
+      'berries': instance.berries?.map((e) => e.toJson()).toList(),
+      'contest_type': instance.contestType?.toJson(),
+      'names': instance.names?.map((e) => e.toJson()).toList(),
     };

@@ -18,12 +18,12 @@ abstract class BasePokeApiEndpoints {
 }
 
 class PokeApiEndpoints extends BasePokeApiEndpoints {
-  PokeApiEndpoints(this.client)
+  PokeApiEndpoints(this._client)
       : super(
-          berry: Endpoint<PokeApiBerry>(client),
-          berryFirmness: Endpoint<PokeApiBerryFirmness>(client),
-          berryFlavor: Endpoint<PokeApiBerryFlavor>(client),
+          berry: Endpoint<PokeApiBerry>(_client),
+          berryFirmness: Endpoint<PokeApiBerryFirmness>(_client),
+          berryFlavor: Endpoint<PokeApiBerryFlavor>(_client),
         );
 
-  final PokeApiClient client;
+  final PokeApiClient _client;
 }

@@ -1,3 +1,12 @@
+# [0.1.4](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.3...v0.1.4) (22-05-2022)
+
+### Feature
+
+- Added PokeApiEncounterMethod model
+- Added PokeApiEncounterCondition model
+- Added PokeApiEncounterConditionValue model
+- Added Encounters endpoint as well as necessary tests
+
 # [0.1.3](https://github.com/pongloongyeat/pokeapi_dart_wrapper/compare/v0.1.2...v0.1.3) (22-05-2022)
 
 ### Feature

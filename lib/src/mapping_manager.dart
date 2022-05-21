@@ -7,11 +7,24 @@ class _MappingManager {
     PokeApiNamedApiResourceList: _Mapper<PokeApiNamedApiResourceList>(
       fromJson: PokeApiNamedApiResourceList.fromJson,
     ),
-    PokeApiBerry: _Mapper<PokeApiBerry>(fromJson: PokeApiBerry.fromJson),
-    PokeApiBerryFirmness:
-        _Mapper<PokeApiBerryFirmness>(fromJson: PokeApiBerryFirmness.fromJson),
-    PokeApiBerryFlavor:
-        _Mapper<PokeApiBerryFlavor>(fromJson: PokeApiBerryFlavor.fromJson),
+    PokeApiBerry: _Mapper<PokeApiBerry>(
+      fromJson: PokeApiBerry.fromJson,
+    ),
+    PokeApiBerryFirmness: _Mapper<PokeApiBerryFirmness>(
+      fromJson: PokeApiBerryFirmness.fromJson,
+    ),
+    PokeApiBerryFlavor: _Mapper<PokeApiBerryFlavor>(
+      fromJson: PokeApiBerryFlavor.fromJson,
+    ),
+    PokeApiContestType: _Mapper<PokeApiContestType>(
+      fromJson: PokeApiContestType.fromJson,
+    ),
+    PokeApiContestEffect: _Mapper<PokeApiContestEffect>(
+      fromJson: PokeApiContestEffect.fromJson,
+    ),
+    PokeApiSuperContestEffect: _Mapper<PokeApiSuperContestEffect>(
+      fromJson: PokeApiSuperContestEffect.fromJson,
+    ),
   };
 
   T? mapToObject<T>(Map<String, dynamic> json) {

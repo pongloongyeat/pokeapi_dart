@@ -13,6 +13,9 @@ abstract class BasePokeApiEndpoints {
     required this.contestType,
     required this.contestEffect,
     required this.superContestEffect,
+    required this.encounterMethod,
+    required this.encounterCondition,
+    required this.encounterConditionValue,
   });
 
   final Endpoint<PokeApiBerry> berry;
@@ -21,6 +24,9 @@ abstract class BasePokeApiEndpoints {
   final Endpoint<PokeApiContestType> contestType;
   final Endpoint<PokeApiContestEffect> contestEffect;
   final Endpoint<PokeApiSuperContestEffect> superContestEffect;
+  final Endpoint<PokeApiEncounterMethod> encounterMethod;
+  final Endpoint<PokeApiEncounterCondition> encounterCondition;
+  final Endpoint<PokeApiEncounterConditionValue> encounterConditionValue;
 }
 
 class PokeApiEndpoints extends BasePokeApiEndpoints {
@@ -32,6 +38,10 @@ class PokeApiEndpoints extends BasePokeApiEndpoints {
           contestType: Endpoint<PokeApiContestType>(_client),
           contestEffect: Endpoint<PokeApiContestEffect>(_client),
           superContestEffect: Endpoint<PokeApiSuperContestEffect>(_client),
+          encounterMethod: Endpoint<PokeApiEncounterMethod>(_client),
+          encounterCondition: Endpoint<PokeApiEncounterCondition>(_client),
+          encounterConditionValue:
+              Endpoint<PokeApiEncounterConditionValue>(_client),
         );
 
   final PokeApiClient _client;

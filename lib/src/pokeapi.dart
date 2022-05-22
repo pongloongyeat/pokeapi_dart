@@ -31,5 +31,5 @@ class PokeApi extends PokeApiEndpoints {
     return PokeApi._(PokeApiClient.withDio(dio));
   }
 
-  PokeApi._(super.client);
+  PokeApi._(PokeApiClient client) : super(client);
 }
